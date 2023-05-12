@@ -3,4 +3,7 @@ points = [1, 3, 3, 2, 1, 4, 2, 4, 1, 8, 5, 1, 3, 4, 1, 3, 10, 1, 1, 1, 1, 4, 4, 
 
 letters_to_points = {key:value for key, value in zip(letters, points)}
 letters_to_points[" "]=0
-print(letters_to_points)
+
+def score_word(word):
+    point_total = 0
+    
