@@ -16,4 +16,6 @@ player_to_words = {"player1": ["BLUE", "TENNIS", "EXIT"],
                    "Prof Reader": ["ZAP", "COMA", "PERIOD"]}
 
 player_to_points={}
-print(score_word("BROWNIE"))
+
+for player, words in player_to_words.items():
+    print(player, words)
