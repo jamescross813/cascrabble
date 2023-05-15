@@ -18,4 +18,9 @@ player_to_words = {"player1": ["BLUE", "TENNIS", "EXIT"],
 player_to_points={}
 
 for player, words in player_to_words.items():
-    print(player, words)
+    player_points=0
+    for word in words:
+        player_points += score_word(word)
+    player_to_points[player]=player_points
+
+print(player_to_points)
